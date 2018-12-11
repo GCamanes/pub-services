@@ -1,4 +1,7 @@
-const pubServices = require('./services/pubs.service');
+const pubService = require('./services/pubs.service');
 
-pubServices.getAllPubs();
-pubServices.getAllOpenPubsToday();
+module.exports = {
+	services: {
+		pubService: pubService
+	}
+}
